@@ -3,58 +3,155 @@
 <html lang="es">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
 
-  <title>Diet planner</title>
-  <meta name="description" content="A simple diet planner for your chosen meals">
-  <meta name="author" content="Marcos Robles">
+    <title>Diet planner</title>
+    <meta content="A simple diet planner for your chosen meals" name="description">
+    <meta content="Marcos Robles" name="author">
 
-  <meta property="og:title" content="Diet planner">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
-  <meta property="og:description" content="A simple HTML5 Template for new projects.">
-  <meta property="og:image" content="image.png">
+    <meta content="Diet planner" property="og:title">
+    <meta content="website" property="og:type">
+    <meta content="https://www.sitepoint.com/a-basic-html5-template/" property="og:url">
+    <meta content="A simple HTML5 Template for new projects." property="og:description">
+    <meta content="image.png" property="og:image">
 
-  <link rel="icon" href="/favicon.ico">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link href="/favicon.ico" rel="icon">
+    <link href="/favicon.svg" rel="icon" type="image/svg+xml">
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <link rel="stylesheet" href="css/styles.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- calendar -->
+    <link href='vendor/fullcalendar/lib/main.css' rel='stylesheet'/>
+    <script src='vendor/fullcalendar/lib/main.js'></script>
 
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- bootstrap -->
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- Fork me ribbon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css"
+          rel="stylesheet"/>
+
+    <!-- tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1/dist/tailwind.min.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/full.css" rel="stylesheet" type="text/css"/>
+
 </head>
 
 <body>
-  <div class="container">
+<a class="github-fork-ribbon right-top" data-ribbon="Fork me on GitHub" href="http://url.to-your.repo"
+   title="Fork me on GitHub">Fork me on GitHub</a>
+<div class="container-fluid">
     <div class="row">
-      <<div class="">
-
+        <div class="col-xl-2 col-lg-1 col-md-0 sideground"></div>
+        <div class="col-xl-8 col-lg-10 col-md-12">
+            <section id="introduction">
+                <h1>Tired of making your own planning meals?</h1>
+                <h2>Let me do it for you!</h2>
+            </section>
+            <section id="parameters">
+                <h3>In this section you decide what data the meals will have</h3>
+                <label class="cursor-pointer label">
+                    <span class="label-text">Kcals/meal</span>
+                    <input checked="checked" class="toggle" type="checkbox">
+                </label>
+                <label class="cursor-pointer label">
+                    <span class="label-text">Season of the meal</span>
+                    <input checked="checked" class="toggle" type="checkbox">
+                </label>
+            </section>
+            <section id="cards">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="card lg:card-side bordered">
+                                <div class="card-body">
+                                    <h2 class="card-title">Macarrones con queso</h2>
+                                    <p>Type: pasta</p>
+                                    <p>Kcals: 2500</p>
+                                    <p>Eat only within 3 days</p>
+                                    <div class="card-actions">
+                                        <button class="btn btn-primary">Remove</button>
+                                        <button class="btn btn-ghost">Edit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3  col-md-6">
+                            <div class="card lg:card-side bordered">
+                                <div class="card-body">
+                                    <h2 class="card-title">Macarrones con queso</h2>
+                                    <p>Type: pasta</p>
+                                    <p>Kcals: 2500</p>
+                                    <p>Eat only within 3 days</p>
+                                    <div class="card-actions">
+                                        <button class="btn btn-primary">Remove</button>
+                                        <button class="btn btn-ghost">Edit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="card lg:card-side bordered">
+                                <div class="card-body">
+                                    <h2 class="card-title">Espaguetis</h2>
+                                    <p>Type: pasta</p>
+                                    <p>Kcals: 2500</p>
+                                    <p>Eat only within 6 days</p>
+                                    <div class="card-actions">
+                                        <button class="btn btn-primary">Remove</button>
+                                        <button class="btn btn-ghost">Edit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card lg:card-side bordered">
+                            <div class="card-body">
+                                <h2 class="card-title">Filetes de pollo</h2>
+                                <p>Type: carne</p>
+                                <p>Kcals: 2500</p>
+                                <p>Eat only within 7 days</p>
+                                <div class="card-actions">
+                                    <button class="btn btn-primary">Remove</button>
+                                    <button class="btn btn-ghost">Edit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="calendar-section">
+                <div id="calendar" style="height: 800px;"></div>
+            </section>
+            <div class="footer-basic">
+                <footer>
+                    <div class="social">
+                        <a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
+                            class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a
+                            href="#"><i class="icon ion-social-facebook"></i></a>
+                    </div>
+                    <p class="copyright">Marcos Robles © 2021</p>
+                </footer>
+            </div>
+            <div class="col-xl-2 col-lg-1 col-md-0 sideground"></div>
+        </div>
     </div>
-  </div>
-  <section id="introduction">
+</div>
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
+    <!-- bootstrap -->
+    <script crossorigin="anonymous"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-  </section>
-  <section id="parameters">
-
-  </section>
-  <section id="cards">
-
-  </section>
-  <section id="calendar">
-
-  </section>
-  <section id="about">
-
-  </section>
-  </div>
-  <!-- Scripts -->
-  <script src="js/scripts.js"></script>
-  <!-- bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>

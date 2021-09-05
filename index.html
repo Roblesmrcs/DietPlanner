@@ -28,15 +28,12 @@
     <!-- bootstrap -->
     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
 
     <!-- Fork me ribbon -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css"
           rel="stylesheet"/>
 
-    <!-- tailwind -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1/dist/tailwind.min.css" rel="stylesheet" type="text/css"/>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/full.css" rel="stylesheet" type="text/css"/>
 
 </head>
 
@@ -62,63 +59,55 @@
                     <input checked="checked" class="toggle" type="checkbox">
                 </label>
             </section>
-            <section id="cards">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <div class="card lg:card-side bordered">
-                                <div class="card-body">
-                                    <h2 class="card-title">Macarrones con queso</h2>
-                                    <p>Type: pasta</p>
-                                    <p>Kcals: 2500</p>
-                                    <p>Eat only within 3 days</p>
-                                    <div class="card-actions">
-                                        <button class="btn btn-primary">Remove</button>
-                                        <button class="btn btn-ghost">Edit</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3  col-md-6">
-                            <div class="card lg:card-side bordered">
-                                <div class="card-body">
-                                    <h2 class="card-title">Macarrones con queso</h2>
-                                    <p>Type: pasta</p>
-                                    <p>Kcals: 2500</p>
-                                    <p>Eat only within 3 days</p>
-                                    <div class="card-actions">
-                                        <button class="btn btn-primary">Remove</button>
-                                        <button class="btn btn-ghost">Edit</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <div class="card lg:card-side bordered">
-                                <div class="card-body">
-                                    <h2 class="card-title">Espaguetis</h2>
-                                    <p>Type: pasta</p>
-                                    <p>Kcals: 2500</p>
-                                    <p>Eat only within 6 days</p>
-                                    <div class="card-actions">
-                                        <button class="btn btn-primary">Remove</button>
-                                        <button class="btn btn-ghost">Edit</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card lg:card-side bordered">
-                            <div class="card-body">
-                                <h2 class="card-title">Filetes de pollo</h2>
-                                <p>Type: carne</p>
-                                <p>Kcals: 2500</p>
-                                <p>Eat only within 7 days</p>
-                                <div class="card-actions">
-                                    <button class="btn btn-primary">Remove</button>
-                                    <button class="btn btn-ghost">Edit</button>
-                                </div>
-                            </div>
-                        </div>
+            <section id="food-cards">
+                <div class="food-cards">
+                    <div class="food-card food-card-1">
+                        <div class="food-card__icon"><i class="fas fa-bolt"></i></div>
+                        <p class="food-card__exit"><i class="fas fa-times"></i></p>
+                        <h2 class="food-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                        <p class="food-card__apply">
+                            <a class="food-card__link" href="#">Delete <i class="fas fa-arrow-right"></i></a>
+                        </p>
+                    </div>
+                    <div class="food-card food-card-2">
+                        <div class="food-card__icon"><i class="fas fa-bolt"></i></div>
+                        <p class="food-card__exit"><i class="fas fa-times"></i></p>
+                        <h2 class="food-card__title">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+                        <p class="food-card__apply">
+                            <a class="food-card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+                        </p>
+                    </div>
+                    <div class="food-card food-card-3">
+                        <div class="food-card__icon"><i class="fas fa-bolt"></i></div>
+                        <p class="food-card__exit"><i class="fas fa-times"></i></p>
+                        <h2 class="food-card__title">Ut enim ad minim veniam.</h2>
+                        <p class="food-card__apply">
+                            <a class="food-card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+                        </p>
+                    </div>
+                    <div class="food-card food-card-4">
+                        <div class="food-card__icon"><i class="fas fa-bolt"></i></div>
+                        <p class="food-card__exit"><i class="fas fa-times"></i></p>
+                        <h2 class="food-card__title">Quis nostrud exercitation ullamco laboris nisi.</h2>
+                        <p class="food-card__apply">
+                            <a class="food-card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+                        </p>
+                    </div>
+                    <div class="food-card food-card-5">
+                        <div class="food-card__icon"><i class="fas fa-bolt"></i></div>
+                        <p class="food-card__exit"><i class="fas fa-times"></i></p>
+                        <h2 class="food-card__title">Ut aliquip ex ea commodo consequat. Duis aute irure dolor.</h2>
+                        <p class="food-card__apply">
+                            <a class="food-card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+                        </p>
+                    </div>
+                    <div class="food-card food-card-1">
+                        <div class="food-card__icon"><i class="fas fa-bolt"></i></div>
+                        <p class="food-card__exit"><i class="fas fa-times"></i></p>
+                        <h2 class="food-card__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                        <p class="food-card__apply">
+                            <a class="food-card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+                        </p>
                     </div>
                 </div>
             </section>
@@ -139,18 +128,18 @@
         </div>
     </div>
 </div>
-    <!-- Scripts -->
-    <script src="js/scripts.js"></script>
-    <!-- bootstrap -->
-    <script crossorigin="anonymous"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script crossorigin="anonymous"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script crossorigin="anonymous"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- Scripts -->
+<script src="js/scripts.js"></script>
+<!-- bootstrap -->
+<script crossorigin="anonymous"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </body>
 

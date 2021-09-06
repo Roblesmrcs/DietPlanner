@@ -1,6 +1,10 @@
 body {
     background: rgb(255,215,57);
     background: linear-gradient(180deg, rgba(255,215,57,1) 8%, rgba(153,84,249,1) 18%, rgba(104,7,249,1) 90%, rgba(39,4,91,1) 100%);}
+
+section{
+    padding: 15px;
+}
 #introduction {
     position: relative;
     width: 100%;
